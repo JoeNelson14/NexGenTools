@@ -1,0 +1,45 @@
+
+
+.home {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  position: absolute;
+  z-index: 1; /* Ensure text is above the image */
+  color: var(--text-color);
+  font-size: 5em;
+  font-family: var(--base-font);
+  padding: 0 10%;
+  max-width: 25%;
+  min-height: 60%;
+}
+
+.hero-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-500px);
+  animation: slideInLeft 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-image {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}

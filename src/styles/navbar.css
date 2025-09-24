@@ -1,0 +1,35 @@
+
+.navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 1% 5%; /* Padding around the navbar */
+  font-family: var(--base-font); /* Use the base font defined in App.css */
+  position: sticky; /* Make the navbar stick to the top */
+}
+
+.nav-title {
+  font-size: 2em; /* Larger font size for the title */
+  font-weight: bold; /* Make the title bold */
+  letter-spacing: 0.1em; /* Slightly increase letter spacing */
+  color: var(--text-color); /* Use the text color defined in App.css */
+  text-decoration: none; /* Remove underline from the title */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+  list-style-type: none; /* Remove bullet points */
+  align-items: center;
+  font-size: 1.2em; /* Slightly larger font size for links */
+}
+
+.nav-links li {
+  color: var(--text-color); /* Use the text color defined in App.css */
+  transition: color .3s ease; /* Smooth color transition on hover */
+}
+
+.nav-links li:hover {
+  color: var(--secondary-color); /* Change color on hover */
+}
